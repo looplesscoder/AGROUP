@@ -96,7 +96,7 @@
     <div class="form-group">
       <label for="State" style="font-size: 17px "><b>State</b></label>
       <select
-        onchange= "print_state('sid');"
+      onchange="print_city('city', this.selectedIndex);"
         id="sts"
         name="stt"
         class="form-control"
@@ -108,17 +108,16 @@
         print_state("sts");
       </script>
       <br />
-      <label for="City" style="font-size: 17px"><b>City</b></label>
+      <label for="city" style="font-size: 17px"><b>City</b></label>
       <select
-        onchange="print_city('city', this.selectedIndex);"
-        id="state"
+        id="city"
         class="form-control"
         name="city"
         style="font-weight: bold; color: black;"
         required
       ></select>
       <script language="javascript">
-        print_state("state");
+        print_city("city");
       </script>
       <br />
       <br />
