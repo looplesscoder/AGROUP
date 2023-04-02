@@ -15,7 +15,6 @@ def weather_fetch(city_name):
     :return: temperature, humidity
     """
     api_key = config.weather_api_key
-    city_name= input("Enter city name:")
     complete_url= "https://api.openweathermap.org/data/2.5/weather?q="+ city_name + "&appid="+api_key
     response = requests.get(complete_url)
     x = response.json()
@@ -30,6 +29,16 @@ def weather_fetch(city_name):
         return None
     
 app = Flask(__name__ ,template_folder= 'templates')
+
+
+# index route
+@ app.route('/')
+def home():
+    title = 'Harvestify - Home'
+    return render_template('index.html', title=title)
+
+
+
 
 # render crop recommendation form page
 @ app.route('/crop-recommend')
@@ -51,10 +60,10 @@ def crop_prediction():
         rainfall = float(request.form['rainfall'])
         city = request.form.get("city")
         state = request.form.get("stt")
-        
+        result = weather_fetch(city)
 
-        if weather_fetch(city) is not None:
-            temperature, humidity = weather_fetch(city)
+        if result is not None:
+            temperature, humidity = result
             data = np.array([[N, P, K, temperature, humidity, ph, rainfall]])
             my_prediction = crop_model.predict(data)
             final_prediction = my_prediction[0]
