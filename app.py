@@ -38,6 +38,12 @@ def home():
     return render_template('index.html', title=title)
 
 
+@ app.route('/sdg')
+def home():
+    title = 'Harvestify - sdg'
+    return render_template('sdg.html', title=title)
+
+
 
 
 # render crop recommendation form page
