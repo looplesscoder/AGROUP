@@ -39,7 +39,7 @@ def home():
 
 
 @ app.route('/sdg')
-def home():
+def sdg():
     title = 'Harvestify - sdg'
     return render_template('sdg.html', title=title)
 
