@@ -2,10 +2,12 @@ from flask import Flask, render_template, request, Markup
 import pickle
 import requests , json
 import config
-import numpy as np
+import numpy as np 
+import pandas as pd
 
 
 crop_model = pickle.load(open('models/model.pkl', 'rb'))
+model = pickle.load(open('models/LinearRegressionModel.pkl', 'rb'))
 
 
 def weather_fetch(city_name):
@@ -76,6 +78,27 @@ def crop_prediction():
             return render_template('cropresult.html', prediction=final_prediction, title=title)
         else:
             return render_template('tryagain.html', title=title)
+        
+data=pd.read_csv('models/Cleaned_Crop.csv')
+
+@app.route('/crop-yield')
+def index():
+    apmc=sorted(data['APMC'].unique())
+    commodity=sorted(data['Commodity'].unique())
+    month=sorted(data['Month'].unique())
+    district=sorted(data['district_name'].unique())
+    return render_template('home.html',apmc=apmc,commodity=commodity,month=month,district=district)
+
+@app.route('/crop-yield-predict',methods=['POST'])
+def predict():
+    apmc=request.form.get('apmc')
+    commodity=request.form.get('commodity')
+    year=request.form.get('year')
+    month=request.form.get('month')
+    quantity=request.form.get('quantity')
+    district=request.form.get('district')
+    pred=model.predict(pd.DataFrame([[apmc, commodity, year, month,quantity,district]],columns=['APMC','Commodity','Year','Month','arrivals_in_qtl','district_name']))
+    return str(np.round(pred,2))
 
 
 if __name__ == '__main__':
