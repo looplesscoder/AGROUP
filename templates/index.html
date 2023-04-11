@@ -23,7 +23,6 @@
 
         <!--media queries-->
         <link rel="stylesheet" href="./../static/styles/queries.css" />
-        
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -57,6 +56,15 @@
                 </li>  
             </ul>
         </nav>
+
+        <div id= "google_element"></div>
+        <script src = "http://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+        <script>
+        function loadGoogleTranslate() {
+                new google.translate.TranslateElement(
+                "google_element");
+        }
+        </script>
 
         <!--Header-->
         <header id="home">
