@@ -24,7 +24,115 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     
-    <P>hi</P>
+    <div id="root">
+      <div class="body">
+        <form method="POST" action="{{ url_for('crop_prediction') }}">
+          <h1>Crop Recomendation</h1>
+
+          <div class="formInput form-group">
+            <label for="Nitrogen"><b>Nitrogen</b></label>
+            <input
+               type="number"
+               class="form-control"
+               id="Nitrogen"
+               name="nitrogen"
+               placeholder="Enter the value (example:50)"
+               
+               required
+            />
+          </div>
+
+          <div class="formInput form-group">
+            <label for="Phosphorous"><b>Phosphorous</b></label>
+              <input
+                type="number"
+                class="form-control"
+                id="Phosphorous"
+                name="phosphorous"
+                placeholder="Enter the value (example:50)"
+                
+                required
+              />
+          </div>
+
+          <div class="formInput form-group">
+            <label for="Pottasium"><b>Pottasium</b></label>
+              <input
+                type="number"
+                class="form-control"
+                id="Pottasium"
+                name="pottasium"
+                placeholder="Enter the value (example:50)"
+                
+                required
+              />
+          </div>
+
+          <div class="formInput form-group">
+            <label for="ph"><b>ph level</b></label>
+              <input
+                type="number"
+                step="0.01"
+                class="form-control"
+                id="ph"
+                name="ph"
+                placeholder="Enter the value"
+                
+                required
+              />
+          </div>
+
+          <div class="formInput form-group">
+            <label for="Rainfall"><b>Rainfall (in mm)</b></label>
+              <input
+                type="number"
+                step="0.01"
+                class="form-control"
+                id="Rainfall"
+                name="rainfall"
+                placeholder="Enter the value"
+                
+                required
+              />
+          </div>
+
+          <div class="formInput form-group">
+            <label for="State"><b>State</b></label>
+              <select class="inputForSelect"
+              onchange="print_city('city', this.selectedIndex);"
+                id="sts"
+                name="stt"
+                class="form-control"
+                
+
+                required
+              >
+              </select>
+              <script language="javascript">
+                print_state("sts");
+              </script>
+               <!--<br /> -->
+              <label for="city" ><b>City</b></label>
+              <select class="inputForSelect"
+                id="city"
+                class="form-control"
+                name="city"
+                
+                required
+              >
+              </select>
+              <script language="javascript">
+                print_city("city");
+              </script>
+             <!-- <br />
+              <br />  -->
+          </div>
+
+          <button type="submit" class="btn btn-info">Predict</button>
+
+        </form>
+      </div>
+    </div>
     
     <script src="" async defer></script>
   </body>
