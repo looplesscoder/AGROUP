@@ -1,11 +1,14 @@
 from flask import Flask, render_template, request, Markup
+from newsapi import NewsApiClient
 import pickle
 import requests , json
 import config
-import numpy as np
-
+import numpy as np 
+import pandas as pd
+import logging 
 
 crop_model = pickle.load(open('models/model.pkl', 'rb'))
+model = pickle.load(open('models/LinearRegressionModel.pkl', 'rb'))
 
 
 def weather_fetch(city_name):
@@ -43,6 +46,10 @@ def sdg():
     title = 'Harvestify - sdg'
     return render_template('sdg.html', title=title)
 
+@ app.route('/news')
+def news():
+    title = 'Harvestify - news'
+    return render_template('news.html', title=title)
 
 
 
@@ -76,6 +83,41 @@ def crop_prediction():
             return render_template('cropresult.html', prediction=final_prediction, title=title)
         else:
             return render_template('tryagain.html', title=title)
+        
+data=pd.read_csv('models/Cleaned_Crop.csv')
+
+@app.route('/crop-yield')
+def index():
+    apmc=sorted(data['APMC'].unique())
+    commodity=sorted(data['Commodity'].unique())
+    month=sorted(data['Month'].unique())
+    district=sorted(data['district_name'].unique())
+    return render_template('home.html',apmc=apmc,commodity=commodity,month=month,district=district)
+
+@app.route('/crop-yield-predict',methods=['POST'])
+def predict():
+    apmc=request.form.get('apmc')
+    commodity=request.form.get('commodity')
+    year=request.form.get('year')
+    month=request.form.get('month')
+    quantity=request.form.get('quantity')
+    district=request.form.get('district')
+    pred=model.predict(pd.DataFrame([[apmc, commodity, year, month,quantity,district]],columns=['APMC','Commodity','Year','Month','arrivals_in_qtl','district_name']))
+    return str(np.round(pred,2))
+
+
+@app.route('/news/<topic>')
+def get_news(topic):
+    url = 'https://newsapi.org/v2/everything'
+    params = {
+        'q': topic,
+        'sortBy': 'popularity',
+        'apiKey': 'c3e90148c4ed4f609f84c15436d5a5cd'
+    }
+    response = requests.get(url, params=params).json()
+    articles = response["articles"]
+
+    return render_template('news.html', articles=articles, topic=topic)
 
 
 if __name__ == '__main__':

@@ -47,3 +47,12 @@ window.onscroll = function () {
         navBar.classList.remove("sticky");
     }
 };
+
+/* FAQ */
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach(faq => {
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active");
+    });
+});
