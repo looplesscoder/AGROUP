@@ -46,6 +46,10 @@ def sdg():
     title = 'Harvestify - sdg'
     return render_template('sdg.html', title=title)
 
+@ app.route('/news')
+def news():
+    title = 'Harvestify - news'
+    return render_template('news.html', title=title)
 
 
 
