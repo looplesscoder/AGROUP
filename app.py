@@ -108,11 +108,11 @@ def predict():
 
 @app.route('/news/<topic>')
 def get_news(topic):
-    url = 'https://newsapi.org/v2/everything'
+    url = 'https://newsapi.org/v2/everything/'
     params = {
-        'q': topic,
+        'q': f"indian {topic}",
         'sortBy': 'popularity',
-        'apiKey': 'c3e90148c4ed4f609f84c15436d5a5cd'
+        'apiKey': config.news_api_key,
     }
     response = requests.get(url, params=params).json()
     articles = response["articles"]
