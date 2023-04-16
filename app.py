@@ -1,10 +1,11 @@
 from flask import Flask, render_template, request, Markup
+from newsapi import NewsApiClient
 import pickle
 import requests , json
 import config
 import numpy as np 
 import pandas as pd
-
+import logging 
 
 crop_model = pickle.load(open('models/model.pkl', 'rb'))
 model = pickle.load(open('models/LinearRegressionModel.pkl', 'rb'))
@@ -99,6 +100,20 @@ def predict():
     district=request.form.get('district')
     pred=model.predict(pd.DataFrame([[apmc, commodity, year, month,quantity,district]],columns=['APMC','Commodity','Year','Month','arrivals_in_qtl','district_name']))
     return str(np.round(pred,2))
+
+
+@app.route('/news/<topic>')
+def get_news(topic):
+    url = 'https://newsapi.org/v2/everything'
+    params = {
+        'q': topic,
+        'sortBy': 'popularity',
+        'apiKey': 'c3e90148c4ed4f609f84c15436d5a5cd'
+    }
+    response = requests.get(url, params=params).json()
+    articles = response["articles"]
+
+    return render_template('news.html', articles=articles, topic=topic)
 
 
 if __name__ == '__main__':
