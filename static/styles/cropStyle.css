@@ -16,7 +16,7 @@ body {
     display: flex;
     height: 150vh;
     justify-content: center;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 form {
