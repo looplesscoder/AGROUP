@@ -37,18 +37,18 @@ app = Flask(__name__ ,template_folder= 'templates')
 # index route
 @ app.route('/')
 def home():
-    title = 'Harvestify - Home'
+    title = 'Home'
     return render_template('index.html', title=title)
 
 
 @ app.route('/sdg')
 def sdg():
-    title = 'Harvestify - sdg'
+    title = 'sdg'
     return render_template('sdg.html', title=title)
 
 @ app.route('/news')
 def news():
-    title = 'Harvestify - news'
+    title = 'news'
     return render_template('news.html', title=title)
 
 
@@ -56,7 +56,7 @@ def news():
 # render crop recommendation form page
 @ app.route('/crop-recommend')
 def crop_recommend():
-    title = 'Harvestify - Crop Recommendation'
+    title = 'Crop Recommendation'
     return render_template('crop.html', title=title)
 
 # render crop recommendation result page
@@ -110,7 +110,7 @@ def predict():
 def get_news(topic):
     url = 'https://newsapi.org/v2/everything'
     params = {
-        'q': topic,
+        'q': f"indian{topic}",
         'sortBy': 'popularity',
         'apiKey': 'c3e90148c4ed4f609f84c15436d5a5cd'
     }
