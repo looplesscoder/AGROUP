@@ -647,7 +647,7 @@ svg {
     position: fixed;
     right: 2rem;
     bottom: 2rem;
-    background-color: var(--baseShade1);
+    background-color: #AED581;
     border: none;
     outline: none;
     border: 0.4rem solid var(--borderRadius2);
