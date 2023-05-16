@@ -339,9 +339,12 @@ header img{
 }
 .models .card .info p{
     letter-spacing: 1px;
-    font-size: 15px;
     margin-top: 8px;
     margin-bottom: 20px;
+    font-size: var(--baseFontSize);
+    color: var(--blackShade1);
+    line-height: 1.8;
+    font-weight: 400;
 }
 .models .card .info .btn{
     text-decoration: none;
