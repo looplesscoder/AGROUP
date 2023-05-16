@@ -390,8 +390,8 @@ header img{
 }
 
 .team .card .img-container{
-    width: 8em;
-    height: 8em;
+    width: 19em;
+    height: 19em;
    
     padding: 0.5em;
     border-radius: 50%;
@@ -434,7 +434,7 @@ header img{
     color: var(--whiteShade1);
 }
 .team .card:hover .img-container{
-    transform: scale(1.15);
+    transform: scale(1);
 }
 
 /* Section: FAQs */
