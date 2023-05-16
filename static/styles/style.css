@@ -180,8 +180,11 @@ nav li a:before {
     transition: all 0.5s;
 }
 nav li a:hover:before{
-    background-color: var(--baseShade1);
+    
     width: 110%;
+}
+nav li a:hover{
+    transform: scale(1.15);
 }
 
 /* Active sideNav Menu */
