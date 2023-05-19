@@ -89,7 +89,7 @@ h3{
 }
 h4{
     font-size: var(--headingFontSize4);
-    color: var(--blackShade2);
+    color: var(--blackShade1);
     margin: 1.5rem 0;;
 }
 button,
@@ -175,13 +175,16 @@ nav li a:before {
     width: 0;
     height: 50%;
     bottom: 0;
-    z-index: -1;
+    z-index: 1;
     margin-left: -5%;
     transition: all 0.5s;
 }
 nav li a:hover:before{
-    background-color: var(--baseShade1);
+    
     width: 110%;
+}
+nav li a:hover{
+    transform: scale(1.15);
 }
 
 /* Active sideNav Menu */
@@ -283,6 +286,7 @@ header img{
     display: flex;
     width: 70%;
     justify-content: space-around;
+    
 }
 .models .card{
     width: 280px;
@@ -338,9 +342,12 @@ header img{
 }
 .models .card .info p{
     letter-spacing: 1px;
-    font-size: 15px;
     margin-top: 8px;
     margin-bottom: 20px;
+    font-size: var(--baseFontSize);
+    color: var(--blackShade1);
+    line-height: 1.8;
+    font-weight: 400;
 }
 .models .card .info .btn{
     text-decoration: none;
@@ -369,8 +376,8 @@ header img{
     padding: 10 10 10 10;
 }  */
 .team .h4{
-    color: var(--blackShade1);
     font-size: var(--headingFontSize4);
+    color: var(--blackShade1);
     font-weight: 500;
     margin: 1.5rem 0;
 }
@@ -386,8 +393,8 @@ header img{
 }
 
 .team .card .img-container{
-    width: 8em;
-    height: 8em;
+    width: 19em;
+    height: 19em;
    
     padding: 0.5em;
     border-radius: 50%;
@@ -400,11 +407,11 @@ header img{
 }
 
 .team .card p{
-    font-weight: 400;
+    font-weight: 470;
     text-transform: uppercase;
     margin: 0.5em 0 2em 0;
     letter-spacing: 2px;
-    color: var(--blackShade2);
+    color: var(--blackShade1);
     font-size: var(--baseFontSize);
 }
 
@@ -430,7 +437,7 @@ header img{
     color: var(--whiteShade1);
 }
 .team .card:hover .img-container{
-    transform: scale(1.15);
+    transform: scale(1);
 }
 
 /* Section: FAQs */
