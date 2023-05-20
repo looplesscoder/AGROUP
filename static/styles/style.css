@@ -44,20 +44,11 @@ html{
     transition: 0.5s;
 }
 .btn-primary{
-    background-color: var(--baseShade1);
+    background-color: #AED581;
     color: var(--whiteShade1);
 }
 .btn-primary:hover{
     background-color: var(--baseShade2);
-}
-.btn-secondary{
-    background-color: var(--whiteShade1);
-    border: 0.3rem solid var(--baseShade1);
-    color: var(--baseShade1);
-}
-.btn-secondary:hover{
-    border: 0.3rem solid var(--baseShade2);
-    color: var(--baseShade2);
 }
 section,
 footer {
@@ -139,6 +130,11 @@ nav{
     padding: 2rem;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(0.8rem);
+    
+}
+.goog-te-banner-frame {
+    position: relative;
+    z-index: 999;
 }
 nav .fas,
 #logo{
@@ -231,7 +227,7 @@ header img{
     border-radius: var(--borderRadius1);
 }
 .sdg .column:hover{
-    background-color: var(--baseShade1);
+    background-color: #8cc751;
 }
 .sdg .column:hover p{
     color: var(--whiteShade1);
@@ -388,7 +384,7 @@ header img{
     color: black;
     cursor: pointer;
     transition: 0.3s;
-    background-color: var(--baseShade1);
+    background-color: #AED581;
     
 }
 
@@ -430,7 +426,7 @@ header img{
 }
 
 .team .card:hover{
-    background: var(--baseShade1);
+    background: #8cc751;
     
 }
 .team .card:hover p{

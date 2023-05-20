@@ -92,9 +92,9 @@ def index():
     commodity=sorted(data['Commodity'].unique())
     month=sorted(data['Month'].unique())
     district=sorted(data['district_name'].unique())
-    return render_template('home.html',apmc=apmc,commodity=commodity,month=month,district=district)
+    return render_template('cropPrice.html',apmc=apmc,commodity=commodity,month=month,district=district)
 
-@app.route('/crop-yield-predict',methods=['POST'])
+@app.route('/crop-price-predict',methods=['POST'])
 def predict():
     apmc=request.form.get('apmc')
     commodity=request.form.get('commodity')
@@ -115,10 +115,11 @@ def get_news(topic):
         'apiKey': config.news_api_key,
     }
     response = requests.get(url, params=params).json()
-    articles = response["articles"]
+    articles = response["articles"][:10]
 
     return render_template('news.html', articles=articles, topic=topic)
 
+  
 
 if __name__ == '__main__':
     app.run(debug=True)
