@@ -7,7 +7,8 @@ India, with its abundant food production, faces a critical question: Does it hav
 With the help of AGROUP we address the problems faced using Live crop prediction and recommendation for precise agricultural practices with a growing support community to help farmers with their day to day challenges and also socializing their success.
 
 ## DATASET
-[Crop Recommendation Dataset](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset)
+- [Crop Recommendation Dataset](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset)
+- [Crop Price Prediction](https://docs.google.com/spreadsheets/d/1Adu7M6OQkJISBSFwD7kJlkpX6Qcc0v0-IFv_ktuh2g8/edit?usp=share_link)
 
 ## SALIENT FEATURES
 - Crop Recommendation System 
@@ -16,9 +17,20 @@ With the help of AGROUP we address the problems faced using Live crop prediction
 - Comprehensive Coverage regarding agriculture news 
 - User Friendly Application 
 ## TECH STACK/TOOLS
-<img src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png" alt="Tool Icon" style="width: 40px; height: 40px;">
-<img src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png" style="width: 40px; height: 40px;">
-<img src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png" alt="Tool Icon" style="width: 40px; height: 40px;">
-<img src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png" alt="Tool Icon" style="width: 40px; height: 40px;">
-<img src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png" alt="Tool Icon" style="width: 40px; height: 40px;">
-<img src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png" alt="Tool Icon" style="width: 40px; height: 40px;">
+<img src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png" alt="Tool Icon" style="width: 40px; height: 40px;"><img src="https://user-images.githubusercontent.com/25181517/192108374-8da61ba1-99ec-41d7-80b8-fb2f7c0a4948.png" alt="Tool Icon" style="width: 40px; height:40px;"><img src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png" alt="Tool Icon" style="width: 40px; height: 40px;">
+<img src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png" alt="Tool Icon" style="width: 40px; height: 40px;">
+<img src="https://user-images.githubusercontent.com/25181517/183898054-b3d693d4-dafb-4808-a509-bab54cf5de34.png" alt="Tool Icon" style="width: 40px; height: 40px;">
+<img src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png" alt="Tool Icon" style="width: 40px; height: 40px;">
+<img src="https://user-images.githubusercontent.com/25181517/183423507-c056a6f9-1ba8-4312-a350-19bcbc5a8697.png" alt="Tool Icon" style="width: 40px; height: 40px;">
+<img src="https://user-images.githubusercontent.com/25181517/183423775-2276e25d-d43d-4e58-890b-edbc88e915f7.png" alt="Tool Icon" style="width: 40px; height: 40px;">
+<img src="https://user-images.githubusercontent.com/25181517/183914128-3fc88b4a-4ac1-40e6-9443-9a30182379b7.png" alt="Tool Icon" style="width: 40px; height: 40px;">
+<img src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png" alt="Tool Icon" style="width: 40px; height: 40px;">
+<img src="" alt="Tool Icon" style="width: 40px; height: 40px;">
+
+## FURTHER IMPROVEMENTS 
+- More data can be collected for the second model for better results. currently we have only tried machine learning techniques but in future we could train the   model and test it with deep learning as well
+- Due to constraint of time , we were unable to deploy the website on web-hosting-platform .
+- More features could be implemented using other tech stacks like IOT etc for models like irrigation system 
+- Better website design and better model training could be done
+
+
