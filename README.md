@@ -26,6 +26,23 @@ With the help of AGROUP we address the problems faced using Live crop prediction
 <img src="https://user-images.githubusercontent.com/25181517/183914128-3fc88b4a-4ac1-40e6-9443-9a30182379b7.png" alt="Tool Icon" style="width: 40px; height: 40px;">
 <img src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png" alt="Tool Icon" style="width: 40px; height: 40px;">
 <img src="" alt="Tool Icon" style="width: 40px; height: 40px;">
+## HOW TO RUN LOCALLY 
+- Before the following steps make sure you have git, Anaconda or miniconda installed on your system
+- Clone the complete project with git clone  or you can just download the code and unzip it
+```
+https://github.com/pratyksha-22/Project-.git
+```
+- Once the project is cloned, open anaconda prompt in the directory where the project was cloned and paste the following block
+```
+conda create -n nenv python=3.7.7
+conda activate nenv
+pip install -r requirements.txt
+```
+- And finally run the project with
+```
+python app.py
+```
+Open the localhost url provided after running app.py and now you can use the project locally in your web browser.
 
 ## FURTHER IMPROVEMENTS 
 - More data can be collected for the second model for better results. currently we have only tried machine learning techniques but in future we could train the   model and test it with deep learning as well
@@ -33,4 +50,5 @@ With the help of AGROUP we address the problems faced using Live crop prediction
 - More features could be implemented using other tech stacks like IOT etc for models like irrigation system 
 - Better website design and better model training could be done
 
-
+## LICENSE 
+This project is licensed under GPL-3.0 license
