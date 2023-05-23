@@ -25,7 +25,7 @@ With the help of AGROUP we address the problems faced using Live crop prediction
 <img src="https://user-images.githubusercontent.com/25181517/183423775-2276e25d-d43d-4e58-890b-edbc88e915f7.png" alt="Tool Icon" style="width: 40px; height: 40px;">
 <img src="https://user-images.githubusercontent.com/25181517/183914128-3fc88b4a-4ac1-40e6-9443-9a30182379b7.png" alt="Tool Icon" style="width: 40px; height: 40px;">
 <img src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png" alt="Tool Icon" style="width: 40px; height: 40px;">
-<img src="" alt="Tool Icon" style="width: 40px; height: 40px;">
+<!--<img src="" alt="Tool Icon" style="width: 40px; height: 40px;"> -->
 ## HOW TO RUN LOCALLY <img width="35" height="35" src="https://img.icons8.com/color/48/laptop--v3.png" alt="laptop--v3"/>
 - Before the following steps make sure you have git, Anaconda or miniconda installed on your system
 - Clone the complete project with git clone  or you can just download the code and unzip it
