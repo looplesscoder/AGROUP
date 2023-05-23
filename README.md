@@ -6,7 +6,7 @@ India, with its abundant food production, faces a critical question: Does it hav
 
 With the help of AGROUP we address the problems faced using Live crop prediction and recommendation for precise agricultural practices with a growing support community to help farmers with their day to day challenges and also socializing their success.
 
-## DATASET <img width="35" height="35" src="https://img.icons8.com/color/48/bar-chart--v1.png" alt="bar-chart--v1"/>
+## DATASET <img width="31" height="31" src="https://img.icons8.com/color/48/bar-chart--v1.png" alt="bar-chart--v1"/>
 - [Crop Recommendation Dataset](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset)
 - [Crop Price Prediction](https://docs.google.com/spreadsheets/d/1Adu7M6OQkJISBSFwD7kJlkpX6Qcc0v0-IFv_ktuh2g8/edit?usp=share_link)
 
