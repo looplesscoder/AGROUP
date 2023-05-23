@@ -1,4 +1,4 @@
-# AGRO UP <img width="37" height="37" src="https://img.icons8.com/color/48/sprout.png" alt="sprout"/>
+# AGRO UP <img width="39" height="39" src="https://img.icons8.com/color/48/sprout.png" alt="sprout"/>
 A web application designed to support farmer-community with Intelligent Machine Learning technologies, providing live crop recommendation and prediction system and price prediction. In addition to our data-driven features, we offer a dedicated news page that keeps you up to date with the latest developments, industry trends, and agricultural news. 
 
 ## ABSTRACT <img width="35" height="35" src="https://img.icons8.com/color/48/solve-problem.png" alt="solve-problem"/>
