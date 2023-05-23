@@ -1,4 +1,4 @@
-# AGRO UP `<i class="fa-solid fa-leaf-oak" style="color:green;"></i>`
+# AGRO UP <i class="fa-solid fa-leaf-oak" style="color:green;"></i>
 A web application designed to support farmer-community with Intelligent Machine Learning technologies, providing live crop recommendation and prediction system and price prediction. In addition to our data-driven features, we offer a dedicated news page that keeps you up to date with the latest developments, industry trends, and agricultural news. 
 
 ## ABSTRACT 
