@@ -24,8 +24,8 @@
 
     <title>Crop Price Predictor</title>
   </head>
-  <body class="bg-dark">
-  <div class="container">
+  <body background="./../static/images/price2.jpg">
+   <div class="container">
   <div class="row">
    <div class="card" style="width:100%; height:100%;margin-top:50px;margin-bottom:50px">
      <div class="card-header" style="text-align: center">
@@ -36,57 +36,57 @@
 
           <div class="row">
 
-             <div class="col-md-6 form-group" style="text-align:center">
+          <center>   <div class="col-md-6 form-group" style="text-align:center">
              <label><b>select the APMC:</br></label>
                 <select class="select-picker form-control" id="apmc"  name="apmc" required="">
                    {% for apmc in apmc %}
                      <option value="{{apmc}}">{{apmc}}</option>
                      {%endfor%}
                     </select>
-                   </div>
+                   </div>  </center>
 
-                    <div class="col-md-6 form-group" style="text-align:center">
+                   <center> <div class="col-md-6 form-group" style="text-align:center">
              <label><b>select the Commodity:</br></label>
                 <select class="select-picker form-control" id="commodity"  name="commodity" required="">
                     {% for commodity in commodity %}
                      <option value="{{commodity}}">{{commodity}}</option>
                      {%endfor%}
                     </select>
-                   </div>
+                   </div> </center>
 
-                   <div class="col-md-6 form-group" style="text-align:center">
+                  <center> <div class="col-md-6 form-group" style="text-align:center">
              <label><b>Enter the Year:</br></label>
                 <input type="text" class="form-control" id="year" name="year" placeholder="Enter year">
-                   </div>
+                   </div></center>
 
-                   <div class="col-md-6 form-group" style="text-align:center">
+                   <center>  <div class="col-md-6 form-group" style="text-align:center">
              <label><b>select the month:</br></label>
                 <select class="select-picker form-control" id="month"  name="month" required="">
                  {% for month in month %}
                      <option value="{{month}}">{{month}}</option>
                      {%endfor%}
                     </select>
-                   </div>
+                   </div></center>
 
-                    <div class="col-md-6 form-group" style="text-align:center">
+                   <center>  <div class="col-md-6 form-group" style="text-align:center">
              <label><b>Enter the Quantity:</br></label>
                 <input type="text" class="form-control" id="quantity" name="quantity" placeholder="Enter the quantity">
-                   </div>
+                   </div></center>
 
 
 
-                    <div class="col-md-6 form-group" style="text-align:center">
+                   <center> <div class="col-md-6 form-group" style="text-align:center">
              <label><b>select the district:</br></label>
                 <select class="select-picker form-control" id="district"  name="district" required="">
                        {% for district in district %}
                      <option value="{{district}}">{{district}}</option>
                      {%endfor%}
                     </select>
-                   </div>
+                   </div></center><br>
                     </select>
                    </div>
                    <div class="col-md-12 form-group">
-                     <button class="btn btn-primary form-control" onclick="send_data()">Predict Price</button>
+                     <button style="background-color: #ad6cea; border-color: #ad6cea;" class="btn btn-primary form-control" onclick="send_data()">Predict Price</button>
                   </div>
 
 
