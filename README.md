@@ -27,6 +27,7 @@ With the help of AGROUP we address the problems faced using Live crop prediction
 <img src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png" alt="Tool Icon" style="width: 40px; height: 40px;">
 <!--<img src="" alt="Tool Icon" style="width: 40px; height: 40px;"> -->
 ## HOW TO RUN LOCALLY <img width="30" height="30" src="https://img.icons8.com/color/48/laptop--v3.png" alt="laptop--v3"/>
+=======
 - Before the following steps make sure you have git, Anaconda or miniconda installed on your system
 - Clone the complete project with git clone  or you can just download the code and unzip it
 ```
@@ -50,5 +51,11 @@ Open the localhost url provided after running app.py and now you can use the pro
 - More features could be implemented using other tech stacks like IOT etc for models like irrigation system 
 - Better website design and better model training could be done
 
+
 ## LICENSE <img width="30" height="30" src="https://img.icons8.com/color/48/note.png" alt="note"/>
 This project is licensed under GPL-3.0 license
+=======
+
+
+
+
