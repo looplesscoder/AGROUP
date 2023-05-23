@@ -1,4 +1,4 @@
-# AGRO UP <i class="fa-solid fa-leaf-oak" style="color:green;"></i>
+# AGRO UP <img src="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/leaf.svg" style="width: 40px; height: 40px; color: green;">
 A web application designed to support farmer-community with Intelligent Machine Learning technologies, providing live crop recommendation and prediction system and price prediction. In addition to our data-driven features, we offer a dedicated news page that keeps you up to date with the latest developments, industry trends, and agricultural news. 
 
 ## ABSTRACT 
