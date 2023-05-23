@@ -10,7 +10,7 @@ With the help of AGROUP we address the problems faced using Live crop prediction
 - [Crop Recommendation Dataset](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset)
 - [Crop Price Prediction](https://docs.google.com/spreadsheets/d/1Adu7M6OQkJISBSFwD7kJlkpX6Qcc0v0-IFv_ktuh2g8/edit?usp=share_link)
 
-## SALIENT FEATURES
+## SALIENT FEATURES <img width="35" height="35" src="https://img.icons8.com/color/48/maintenance.png" alt="maintenance"/>
 - Crop Recommendation System 
 - Crop Price Prediction 
 - Multilingual Readability 
