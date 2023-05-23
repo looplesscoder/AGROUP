@@ -44,7 +44,7 @@ python app.py
 ```
 Open the localhost url provided after running app.py and now you can use the project locally in your web browser.
 
-## FURTHER IMPROVEMENTS 
+## FURTHER IMPROVEMENTS <img width="31" height="31" src="https://img.icons8.com/color/48/bullish.png" alt="bullish"/>
 - More data can be collected for the second model for better results. currently we have only tried machine learning techniques but in future we could train the   model and test it with deep learning as well
 - Due to constraint of time , we were unable to deploy the website on web-hosting-platform .
 - More features could be implemented using other tech stacks like IOT etc for models like irrigation system 
