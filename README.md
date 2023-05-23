@@ -50,5 +50,5 @@ Open the localhost url provided after running app.py and now you can use the pro
 - More features could be implemented using other tech stacks like IOT etc for models like irrigation system 
 - Better website design and better model training could be done
 
-## LICENSE 
+## LICENSE <img width="40" height="40" src="https://img.icons8.com/color/48/note.png" alt="note"/>
 This project is licensed under GPL-3.0 license
