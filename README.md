@@ -1,4 +1,4 @@
-# AGRO UP <img width="35" height="35" src="https://img.icons8.com/color/48/sprout.png" alt="sprout"/>
+# AGRO UP <img width="37" height="37" src="https://img.icons8.com/color/48/sprout.png" alt="sprout"/>
 A web application designed to support farmer-community with Intelligent Machine Learning technologies, providing live crop recommendation and prediction system and price prediction. In addition to our data-driven features, we offer a dedicated news page that keeps you up to date with the latest developments, industry trends, and agricultural news. 
 
 ## ABSTRACT <img width="35" height="35" src="https://img.icons8.com/color/48/solve-problem.png" alt="solve-problem"/>
@@ -26,7 +26,7 @@ With the help of AGROUP we address the problems faced using Live crop prediction
 <img src="https://user-images.githubusercontent.com/25181517/183914128-3fc88b4a-4ac1-40e6-9443-9a30182379b7.png" alt="Tool Icon" style="width: 40px; height: 40px;">
 <img src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png" alt="Tool Icon" style="width: 40px; height: 40px;">
 <!--<img src="" alt="Tool Icon" style="width: 40px; height: 40px;"> -->
-## HOW TO RUN LOCALLY <img width="35" height="35" src="https://img.icons8.com/color/48/laptop--v3.png" alt="laptop--v3"/>
+## HOW TO RUN LOCALLY <img width="30" height="30" src="https://img.icons8.com/color/48/laptop--v3.png" alt="laptop--v3"/>
 - Before the following steps make sure you have git, Anaconda or miniconda installed on your system
 - Clone the complete project with git clone  or you can just download the code and unzip it
 ```
