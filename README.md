@@ -45,7 +45,7 @@ python app.py
 ```
 Open the localhost url provided after running app.py and now you can use the project locally in your web browser.
 
-## DEMO <img width="31" height="31" src="https://img.icons8.com/color/48/documentary.png" alt="documentary"/>
+## DEMO <img width="34" height="34" src="https://img.icons8.com/color/48/documentary.png" alt="documentary"/>
 
 https://github.com/pratyksha-22/AGROUP/assets/79979799/7f529f9a-cae6-409f-bed0-e3b742e85838
 
