@@ -45,6 +45,10 @@ python app.py
 ```
 Open the localhost url provided after running app.py and now you can use the project locally in your web browser.
 
+## DEMO
+
+https://github.com/pratyksha-22/AGROUP/assets/79979799/7f529f9a-cae6-409f-bed0-e3b742e85838
+
 ## FURTHER IMPROVEMENTS <img width="31" height="31" src="https://img.icons8.com/color/48/bullish.png" alt="bullish"/>
 - More data can be collected for the second model for better results. currently we have only tried machine learning techniques but in future we could train the   model and test it with deep learning as well
 - Due to constraint of time , we were unable to deploy the website on web-hosting-platform .
