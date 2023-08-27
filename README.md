@@ -10,18 +10,6 @@ With the help of AGROUP we address the problems faced using Live crop prediction
 - [Crop Recommendation Dataset](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset)
 - [Crop Price Prediction](https://docs.google.com/spreadsheets/d/1Adu7M6OQkJISBSFwD7kJlkpX6Qcc0v0-IFv_ktuh2g8/edit?usp=share_link)
 
-## SCREENSHOTS
-### Landing Page
-<img src="https://github.com/pratyksha-22/AGROUP/blob/main/images/Screenshot%202023-08-27%20161552.png" width="600" height="400" />
-
-### News Page
-<img src="https://github.com/pratyksha-22/AGROUP/blob/main/images/Screenshot%202023-08-27%20161734.png" width="600" height="400" />
-
-### SDGs Targeted
-<img src="https://github.com/pratyksha-22/AGROUP/blob/main/images/Screenshot%202023-08-27%20161811.png" width="600" height="400" />
-
-
-
 
 ## SALIENT FEATURES <img width="32" height="32" src="https://img.icons8.com/color/48/maintenance.png" alt="maintenance"/>
 - Crop Recommendation System 
